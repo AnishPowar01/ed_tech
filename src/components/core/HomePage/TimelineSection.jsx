@@ -54,11 +54,11 @@ const TimelineSection = () => {
                 } )
             }
         </div>
-        <div className='relative shadow-blue-200'>
+        <div className='relative shadow-[10px_-5px_50px_-5px] shadow-blue-200'>
 
             <img  src={timelineImage}
             alt="timelineImage"
-            className='shadow-white object-cover h-fit'
+            className='shadow-white shadow-[20px_20px_0px_0px] object-cover h-fit'
             />
 
             <div className='absolute bg-caribbeangreen-700 flex flex-row text-white uppercase py-7

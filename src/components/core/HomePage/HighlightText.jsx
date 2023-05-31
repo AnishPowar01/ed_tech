@@ -10,6 +10,7 @@ const HighlightText = ({text}) => {
        {
             text
         }
+        {" "}
        </span>
   
   )

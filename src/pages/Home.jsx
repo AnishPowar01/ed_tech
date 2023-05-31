@@ -13,6 +13,9 @@ import TimelineSection from "../components/core/HomePage/TimelineSection";
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection";
 
 import Banner from "../assets/Images/banner.mp4";
+import InstructorSection from "../components/core/HomePage/InstructorSection";
+import Footer from "../components/common/Footer";
+import ExploreMore from "../components/core/HomePage/ExploreMore";
 
 const Home = () => {
   return (
@@ -21,7 +24,7 @@ const Home = () => {
 
       <div className="relative mx-auto flex flex-col w-11/12 items-center text-[#F1F2FF] justify-between max-w-maxContent">
         <Link to={"/signup"}>
-          <div className="group mt-16 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200  hover:scale-95">
+          <div className="group mt-16 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200  hover:scale-95 shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)]">
             <div className="flex flex-row items-center gap-2 rounded-full px-7 py-[8px] transition-all duration-200 group-hover:bg-richblack-900">
               <p>Become an Instructor</p>
               <FaArrowRight />
@@ -51,8 +54,8 @@ const Home = () => {
           </CTAButton>
         </div>
 
-        <div className="mx-3 my-12 shadow-blue-200">
-          <video muted loop autoPlay>
+        <div className="mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200">
+          <video muted loop autoPlay className="shadow-[20px_20px_rgba(255,255,255)]">
             <source src={Banner} type="video/mp4" />
           </video>
         </div>
@@ -116,7 +119,10 @@ const Home = () => {
             codeColor={"text-yellow-100"}
           />
         </div>
+
+         <ExploreMore/>
       </div>
+
 
       {/* section 2  */}
 
@@ -145,9 +151,9 @@ const Home = () => {
 
             </div>
 
-            <div className='mx-auto w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-7'>
+            <div className='mx-auto w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-8'>
 
-                <div className='flex flex-row gap-5 mb-10 mt-[95px]'>
+                <div className='flex flex-row gap-7 mb-10 mt-[100px] justify-between'>
                     <div className='text-4xl font-semibold w-[45%]'>
                         Get the Skills you need for a
                         <HighlightText text={"Job that is in demand"} />
@@ -174,15 +180,23 @@ const Home = () => {
 
             </div>
 
-            
-
+          
       </div>
 
 
-
       {/* section 3  */}
+      <div className="w-11/12 mx-auto max-w-maxContent flex flex-col items-center justify-between gap-8 bg-richblack-900 text-[#F1F2ff]">
+
+      <InstructorSection/>
+
+      {/* Review */}
+
+
+      
+      </div>
 
       {/* Footer  */}
+      <Footer/>
     </div>
   );
 };
